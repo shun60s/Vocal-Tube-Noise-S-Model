@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>vocal tract tube noise model</title>
+<meta name="description" content="generate fricative voice /sa/ sound by two tubes model and noise source" />
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-lg px-3 my-5 markdown-body">
+<h1>vocal tract tube noise model   </h1>
+<p> <br />
+This is an experiment to generate fricative voice /sa/ sound by two tubes model and noise source instead of turbulent sound.<br /></p>
+
+<p><a href="https://github.com/shun60s/Vocal-Tube-Noise-S-Model">github repository</a><br /></p>
+
+<h2>usage   </h2>
+<p>The voice /sa/ sound consists of two parts, that are preceding noise sound and following vowel sound.<br /></p>
+
+<p>Generate following vowel sound<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python main2var.py
+</code></pre></div></div>
+<p><img src="waveform_variable_a.png" alt="figure1" ><br /></p>
+
+
+<p>Generate preceding noise sound, using perlin noise<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python PerlinNoise.py
+</code></pre></div></div>
+<p><img src="waveform_s_noise_narrow.png" alt="figure2" ><br /></p>
+
+
+<p>Apply resonance effect to the noise<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python main2noiseresona.py
+</code></pre></div></div>
+<p><img src="su_wave_spectrum_sample.png" alt="figure3" ><br /></p>
+
+
+<p>Combine preceding noise sound and following vowel sound<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python make_sa.py
+</code></pre></div></div>
+<p><img src="waveform_like_sa.png" alt="figure4" ><br />
+This will save sa_like.wav that sounds similar to voice /sa/ sound.<br /></p>
+
+
+<h2>Generated sample  </h2>
+
+<p>There are sample wav files of generated waveform in the generated_waveform folder.<br /></p>
+
+
+<h2>Document  </h2>
+
+<p>See <a href="Explain-E.pdf">Explain-E.pdf</a> / <a href="Explain-J.pdf">Explain-J.pdf</a> in the docs folder.<br /></p>
+
+
+<h2>Related link      </h2>
+
+<ul>
+<li><a href="https://wsignal.sakura.ne.jp/onsei2007/python4-e.html">Voice /sa/ sound waveform generation by two tubes model and noise source</a>  </li>
+<li><a href="https://wsignal.sakura.ne.jp/onsei2007/python4.html">same content above in Japanese</a>  </li>
+<li><a href="https://wsignal.sakura.ne.jp/onsei2007/scilab456e.html">Speech Waveform Generation by SCILAB</a><br />
+</li></ul>
+
+<h2>License    </h2>
+MIT<br />
+Regarding to PerlinNoise.py, please follow the notice in the source code. 
+</div>
+</body>
+</html>
