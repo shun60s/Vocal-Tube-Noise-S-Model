@@ -20,28 +20,28 @@ This is an experiment to generate fricative voice /sa/ sound by two tubes model 
 
 <p>Generate following vowel sound<br /></p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-python main2var.py
+python3 main2var.py
 </code></pre></div></div>
 <p><img src="waveform_variable_a.png" alt="figure1" ><br /></p>
 
 
 <p>Generate preceding noise sound, using perlin noise<br /></p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-python PerlinNoise.py
+python3 PerlinNoise.py
 </code></pre></div></div>
 <p><img src="waveform_s_noise_narrow.png" alt="figure2" ><br /></p>
 
 
 <p>Apply resonance effect to the noise<br /></p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-python main2noiseresona.py
+python3 main2noiseresona.py
 </code></pre></div></div>
 <p><img src="su_wave_spectrum_sample.png" alt="figure3" ><br /></p>
 
 
 <p>Combine preceding noise sound and following vowel sound<br /></p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-python make_sa.py
+python3 make_sa.py
 </code></pre></div></div>
 <p><img src="waveform_like_sa.png" alt="figure4" ><br />
 This will save sa_like.wav that sounds similar to voice /sa/ sound.<br /></p>

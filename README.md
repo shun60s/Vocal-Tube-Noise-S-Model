@@ -9,28 +9,28 @@ The voice /sa/ sound consists of two parts, that are preceding noise sound and f
 
 Generate following vowel sound  
 ```
-python main2var.py
+python3 main2var.py
 ```
 ![figure1](docs/waveform_variable_a.png)  
 
 
 Generate preceding noise sound, using perlin noise  
 ```
-python PerlinNoise.py
+python3 PerlinNoise.py
 ```
 ![figure2](docs/waveform_s_noise_narrow.png)  
 
 
 Apply resonance effect to the noise  
 ```
-python main2noiseresona.py
+python3 main2noiseresona.py
 ```
 ![figure3](docs/su_wave_spectrum_sample.png)  
 
 
 Combine preceding noise sound and following vowel sound  
 ```
-python make_sa.py
+python3 make_sa.py
 ```
 ![figure4](docs/waveform_like_sa.png)  
 This will save sa_like.wav that sounds similar to voice /sa/ sound.  
