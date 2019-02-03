@@ -43,14 +43,9 @@ There are sample wav files of generated waveform in the generated_waveform folde
 
 ## Document  
 
-See [Explain-E.pdf](docs/Explain-E.pdf) / [Explain-J.pdf](docs/Explain-J.pdf) in the docs folder.  
-  
-  
-## Related link      
+Please see related WEB [Fricative voice /sa/ sound waveform generation by two tubes model and noise source](https://wsignal.sakura.ne.jp/onsei2007/python4-e.html) or
+[same content in Japanese](https://wsignal.sakura.ne.jp/onsei2007/python4.html)  
 
-- [Voice /sa/ sound waveform generation by two tubes model and noise source](https://wsignal.sakura.ne.jp/onsei2007/python4-e.html)  
-- [same content above in Japanese](https://wsignal.sakura.ne.jp/onsei2007/python4.html)  
-- [Speech Waveform Generation by SCILAB](https://wsignal.sakura.ne.jp/onsei2007/scilab456e.html)  
 
 ## License    
 MIT  
