@@ -189,6 +189,6 @@ if __name__ == '__main__':
     # apply HPF(low freq cut) to narrow spectrum band wide
     hpf1= Class_IIR1(fc=5000.0, btype='high', n_order=3)
     ydh= hpf1.filtering( yd)
-    sub_plot_waveform(yd,'Waveform (narrow band)', pn.sampling_rate)
+    sub_plot_waveform(ydh,'Waveform (narrow band)', pn.sampling_rate)
     wavwrite( 's_noise_narrow.wav', pn.sampling_rate , ( ydh * 2 ** 15).astype(np.int16))
     print ('save s_noise_narrow.wav')
