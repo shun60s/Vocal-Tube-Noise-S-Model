@@ -35,13 +35,7 @@ python3 make_sa.py
 ![figure4](docs/waveform_like_sa.png)  
 It will save sa_like.wav that sounds similar to voice /sa/ sound.  
 
-
-
-
-
 ## Document  
-
-
 For more information, please see related WEB [Fricative voice /sa/ sound waveform generation by two tubes model and noise source](https://wsignal.sakura.ne.jp/onsei2007/python4-e.html) or 
 [same content in Japanese](https://wsignal.sakura.ne.jp/onsei2007/python4.html)  
 
